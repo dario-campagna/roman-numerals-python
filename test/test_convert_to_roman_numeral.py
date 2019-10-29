@@ -35,13 +35,13 @@ class TestConvert(unittest.TestCase):
 
     def test_18_is_XVIII(self):
         self.assertEqual('XVIII', str(RomanNumeral(18)))
-    
+
     def test_50_is_L(self):
         self.assertEqual('L', str(RomanNumeral(50)))
-    
+
     def test_60_is_LX(self):
         self.assertEqual('LX', str(RomanNumeral(60)))
-    
+
     def test_40_is_XL(self):
         self.assertEqual('XL', str(RomanNumeral(40)))
 
@@ -50,3 +50,18 @@ class TestConvert(unittest.TestCase):
 
     def test_90_is_XC(self):
         self.assertEqual('XC', str(RomanNumeral(90)))
+
+    def test_500_is_D(self):
+        self.assertEqual('D', str(RomanNumeral(500)))
+
+    def test_400_is_CD(self):
+        self.assertEqual('CD', str(RomanNumeral(400)))
+
+    def test_1000_is_M(self):
+        self.assertEqual('M', str(RomanNumeral(1000)))
+
+    def test_900_is_CM(self):
+        self.assertEqual('CM', str(RomanNumeral(900)))
+
+    def test_1776_is_MDCCLXXVI(self):
+        self.assertEqual('MDCCLXXVI', str(RomanNumeral(1776)))
