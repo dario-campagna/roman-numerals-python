@@ -47,3 +47,6 @@ class TestConvert(unittest.TestCase):
 
     def test_100_is_C(self):
         self.assertEqual('C', str(RomanNumeral(100)))
+
+    def test_90_is_XC(self):
+        self.assertEqual('XC', str(RomanNumeral(90)))
