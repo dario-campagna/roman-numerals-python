@@ -8,6 +8,9 @@ class TestConvert(unittest.TestCase):
 
     def test_1_is_I(self):
         self.assertEqual('I', str(RomanNumeral(1)))
-    
+
     def test_2_is_II(self):
         self.assertEqual('II', str(RomanNumeral(2)))
+
+    def test_3_is_III(self):
+        self.assertEqual('III', str(RomanNumeral(3)))
