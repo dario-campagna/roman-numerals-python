@@ -7,4 +7,4 @@ class RomanNumeral(object):
         if self.decimal == 0:
             return ''
         else:
-            return 'I'
+            return 'I'*self.decimal

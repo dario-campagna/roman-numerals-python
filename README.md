@@ -1,3 +1,3 @@
 # Roman Numerals
 
-Convert number in decimal notation to Roman numerals.
+Convert numbers in decimal notation to Roman numerals.
