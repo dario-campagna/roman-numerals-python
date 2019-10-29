@@ -2,7 +2,7 @@ class RomanNumeral(object):
     def __init__(self, decimal):
         super()
         self.decimal = decimal
-        self.numeral_by_decimal = {9: 'IX', 5: 'V', 4: 'IV', 1: 'I'}
+        self.numeral_by_decimal = {10: 'X', 9: 'IX', 5: 'V', 4: 'IV', 1: 'I'}
 
     def __numeral_to_string__(self):
         if self.decimal == 0:
