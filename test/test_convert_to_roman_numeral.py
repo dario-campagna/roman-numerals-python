@@ -23,3 +23,9 @@ class TestConvert(unittest.TestCase):
     
     def test_6_is_VI(self):
         self.assertEqual('VI', str(RomanNumeral(6)))
+    
+    def test_7_is_VII(self):
+        self.assertEqual('VII', str(RomanNumeral(7)))
+    
+    def test_9_is_IX(self):
+        self.assertEqual('IX', str(RomanNumeral(9)))
