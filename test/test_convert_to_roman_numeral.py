@@ -38,3 +38,9 @@ class TestConvert(unittest.TestCase):
     
     def test_50_is_L(self):
         self.assertEqual('L', str(RomanNumeral(50)))
+    
+    def test_60_is_LX(self):
+        self.assertEqual('LX', str(RomanNumeral(60)))
+    
+    def test_40_is_XL(self):
+        self.assertEqual('XL', str(RomanNumeral(40)))
