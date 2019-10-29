@@ -20,3 +20,6 @@ class TestConvert(unittest.TestCase):
     
     def test_5_is_V(self):
         self.assertEqual('V', str(RomanNumeral(5)))
+    
+    def test_6_is_VI(self):
+        self.assertEqual('VI', str(RomanNumeral(6)))

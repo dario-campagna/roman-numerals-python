@@ -7,6 +7,8 @@ class RomanNumeral(object):
         numeral_by_decimal = {0: '', 1: 'I', 4: 'IV', 5: 'V'}
         if self.decimal in numeral_by_decimal:
             return numeral_by_decimal[self.decimal]
+        elif self.decimal == 6:
+            return 'VI'
         else:
             return numeral_by_decimal[1]*self.decimal
 
