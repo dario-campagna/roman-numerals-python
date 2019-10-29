@@ -8,6 +8,8 @@ class RomanNumeral(object):
             return ''
         elif self.decimal == 4:
             return 'IV'
+        elif self.decimal == 5:
+            return 'V'
         else:
             return 'I'*self.decimal
 

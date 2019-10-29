@@ -17,3 +17,6 @@ class TestConvert(unittest.TestCase):
     
     def test_4_is_IV(self):
         self.assertEqual('IV', str(RomanNumeral(4)))
+    
+    def test_5_is_V(self):
+        self.assertEqual('V', str(RomanNumeral(5)))
