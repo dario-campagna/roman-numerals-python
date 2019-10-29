@@ -2,15 +2,19 @@ class RomanNumeral(object):
     def __init__(self, decimal):
         super()
         self.decimal = decimal
+        self.numeral_by_decimal = {5: 'V', 4: 'IV', 1: 'I'}
 
     def __numeral_to_string__(self):
-        numeral_by_decimal = {0: '', 1: 'I', 4: 'IV', 5: 'V'}
-        if self.decimal in numeral_by_decimal:
-            return numeral_by_decimal[self.decimal]
-        elif self.decimal == 6:
-            return 'VI'
+        if self.decimal == 0:
+            return ''
         else:
-            return numeral_by_decimal[1]*self.decimal
+            closest_numeral, rest = self.__closest_numeral__()
+            return closest_numeral + str(RomanNumeral(rest))
+
+    def __closest_numeral__(self):
+        decimals = self.numeral_by_decimal.keys()
+        closest = next(d for d in decimals if d <= self.decimal)
+        return (self.numeral_by_decimal[closest], self.decimal - closest)
 
     def __str__(self):
         return self.__numeral_to_string__()
