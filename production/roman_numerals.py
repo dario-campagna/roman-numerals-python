@@ -4,14 +4,11 @@ class RomanNumeral(object):
         self.decimal = decimal
 
     def __numeral_to_string__(self):
-        if self.decimal == 0:
-            return ''
-        elif self.decimal == 4:
-            return 'IV'
-        elif self.decimal == 5:
-            return 'V'
+        numeral_by_decimal = {0: '', 1: 'I', 4: 'IV', 5: 'V'}
+        if self.decimal in numeral_by_decimal:
+            return numeral_by_decimal[self.decimal]
         else:
-            return 'I'*self.decimal
+            return numeral_by_decimal[1]*self.decimal
 
     def __str__(self):
         return self.__numeral_to_string__()
