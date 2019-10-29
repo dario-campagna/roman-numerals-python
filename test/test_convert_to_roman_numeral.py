@@ -44,3 +44,6 @@ class TestConvert(unittest.TestCase):
     
     def test_40_is_XL(self):
         self.assertEqual('XL', str(RomanNumeral(40)))
+
+    def test_100_is_C(self):
+        self.assertEqual('C', str(RomanNumeral(100)))
